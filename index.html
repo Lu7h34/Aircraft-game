@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Aircraft Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Interactive Aircraft Game</h1>
+  </header>
+
+  <main>
+    <section id="game-area">
+      <canvas id="aircraftCanvas"></canvas>
+    </section>
+
+    <section id="controls">
+      <h2>Change Your Wings</h2>
+      <label for="wing-select">Select Wing Type:</label>
+      <select id="wing-select">
+        <option value="light">Light Wings</option>
+        <option value="standard">Standard Wings</option>
+        <option value="heavy">Heavy Wings</option>
+      </select>
+      <button id="startGame">Start Game</button>
+    </section>
+
+    <section id="chatbot">
+      <h2>Chatbot</h2>
+      <div id="chat-window">
+        <div id="messages"></div>
+        <input type="text" id="user-input" placeholder="Ask me anything..." />
+        <button id="send-button">Send</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Include Three.js and Cannon.js from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cannon-es/0.18.0/cannon-es.min.js"></script>
+
+  <script src="app.js"></script>
+</body>
+</html>
